@@ -17,7 +17,17 @@ class Solution:
                 return True
         return False
 
+    def containsDuplicate2(self, nums: List[int]) -> bool:
+        hashSet =set()
+
+        for n in nums:
+            if n in hashSet:
+                return True
+            hashSet.add(n)
+        return False
+
+
 
 test_solution = Solution()
 # test_solution.containsDuplicate([1,2,3])
-print(test_solution.containsDuplicate([1,2,1]))
+print(test_solution.containsDuplicate2([0,2,1]))
