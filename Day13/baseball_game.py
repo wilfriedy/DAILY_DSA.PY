@@ -24,17 +24,18 @@ class Solution:
             else:
                 rec.append(int(el))
 
+        return sum(rec)
         # print(rec)
-        record_size = len(rec)
-        if not rec:
-            return 0
-        if record_size < 2:
-            return rec[0]
-        total = 0
-        for _, el in enumerate(rec):
-            total += el
-
-        return total
+        # record_size = len(rec)
+        # if not rec:
+        #     return 0
+        # if record_size < 2:
+        #     return rec[0]
+        # total = 0
+        # for _, el in enumerate(rec):
+        #     total += el
+        #
+        # return total
 
 
 print(Solution().calPoints(["5", "2", "C", "D", "+"]))
